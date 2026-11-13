@@ -1,6 +1,9 @@
 package com.crm.Testcases;
 
 import org.testng.annotations.Test;
+
+import com.crm.pages.HomePage;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.AssertJUnit;
 import org.testng.Assert;
@@ -10,6 +13,8 @@ import org.testng.annotations.Test;
 public class LoginPageTestCase extends BaseClass {
 	@BeforeClass
 	public void pageSetup() {
+		HomePage hp = new HomePage(driver);
+		System.out.println(hp.getStatusofLink());
 		hp.getStatusofLink();
 	}
 

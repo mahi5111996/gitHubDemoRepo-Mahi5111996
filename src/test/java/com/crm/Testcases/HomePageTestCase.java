@@ -4,6 +4,8 @@ package com.crm.Testcases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
 
 public class HomePageTestCase extends BaseClass {
 
@@ -26,6 +28,7 @@ public class HomePageTestCase extends BaseClass {
 	@Test(priority = 3)
 	public void validateSignInLink() {
 		String loginurl = hp.getStatusofLink();
+		System.out.println("URL: - "+loginurl);
 		Assert.assertTrue(loginurl.contains("crm/login.html"),"Test Failed:Login Page not opened!!");
 		System.out.println("Test Passed:Navigated to Login Page");
 	}

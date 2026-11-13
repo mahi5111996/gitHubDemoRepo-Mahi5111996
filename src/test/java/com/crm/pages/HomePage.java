@@ -12,7 +12,7 @@ public class HomePage {
 		
 	}
 	
-	private By link = By.name("sign-in-link");
+	private By link = By.linkText("Sign In");
 	
 	public String getAPPUrl() {
 		return driver.getCurrentUrl();
