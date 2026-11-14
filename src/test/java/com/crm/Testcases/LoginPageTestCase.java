@@ -3,7 +3,6 @@ package com.crm.Testcases;
 import org.testng.annotations.Test;
 
 import com.crm.pages.HomePage;
-import com.crm.pages.LoginPage;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.Assert;
@@ -15,10 +14,10 @@ public class LoginPageTestCase extends BaseClass {
 	public void pageSetup() {
 		System.out.println("Driver: "+ driver);
 		hp = new HomePage(driver);
-		lp = new LoginPage(driver);
-		
-		System.out.println("hp : "+hp);
-		System.out.println("lp : "+lp);
+//		lp = new LoginPage(driver);
+//		
+//		System.out.println("hp : "+hp);
+//		System.out.println("lp : "+lp);
 		System.out.println("hp Statu Link: "+hp.getStatusofLink());
 		hp.getStatusofLink();
 	}
