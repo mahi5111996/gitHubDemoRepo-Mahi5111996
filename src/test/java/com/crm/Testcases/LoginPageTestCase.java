@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class LoginPageTestCase extends BaseClass {
 	@BeforeClass
 	public void pageSetup() {
-		HomePage hp = new HomePage(driver);
+		//HomePage hp = new HomePage(driver);
 		System.out.println(hp.getStatusofLink());
 		hp.getStatusofLink();
 	}
